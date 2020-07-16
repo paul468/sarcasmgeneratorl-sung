@@ -1,8 +1,9 @@
+filename = input("Unter Welchen filenamen möchtest du deinen fretigen Satz speichern")
 answer = input("Möchtest du mit einem Grossbuchstaben starten?")
 satz = input()
 word = ''
 
-f = open("output.txt", "w+")
+f = open(filename + "txt", "w+")
 def converter():
     choice = 2
     global satz, word
