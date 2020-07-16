@@ -1,4 +1,4 @@
-filename = input("Unter Welchen filenamen möchtest du deinen fretigen Satz speichern")
+filename = input("Unter Welchen filenamen möchtest du deinen fertigen Satz speichern")
 answer = input("Möchtest du mit einem Grossbuchstaben starten?")
 satz = input()
 word = ''
