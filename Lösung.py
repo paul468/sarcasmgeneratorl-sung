@@ -1,16 +1,16 @@
-answer = input("Möchtest du mit einem grossbuchstaben starten?")
+answer = input("Möchtest du mit einem Grossbuchstaben starten?")
 satz = input()
 word = ''
 
 f = open("output.txt", "w+")
 def converter():
-    etwas = 2
+    choice = 2
     global satz, word
     counter = 0
     if answer == "ja":
-        etwas2 = 1
+        choice = 1
     elif answer == "nein":
-        etwas2 = 0
+        choice = 0
 
     for i in range(len(satz)):
 
@@ -21,8 +21,7 @@ def converter():
             word += 'i'
         elif satz[i] == 'l':
             word += 'l'
-        elif ((counter % 2) == etwas2):  
-
+        elif ((counter % 2) == choice):  
             word += satz[i].swapcase()
         else:
             word += satz[i].lower()
